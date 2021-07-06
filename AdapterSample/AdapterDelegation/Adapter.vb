@@ -1,12 +1,13 @@
 ﻿Namespace AdapterDelegation
     Public Class Adapter : Implements ICommand
 
+        Private adaptee As New Adaptee()
+
         Public Sub StartLog() Implements ICommand.StartLog
             Console.WriteLine("処理を開始します！")
         End Sub
 
         Public Sub CommandMain() Implements ICommand.CommandMain
-            Dim adaptee As New Adaptee()
             adaptee.WriteHelloWorld()
         End Sub
 

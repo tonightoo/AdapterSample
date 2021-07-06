@@ -21,6 +21,9 @@ Module Client
                 Exit Sub
         End Select
 
+        'テスト
+
+
         command.StartLog()
         command.CommandMain()
         command.EndLog()

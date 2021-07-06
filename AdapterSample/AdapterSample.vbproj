@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BC8088E6-E1CC-41CC-AFE1-E0B7930DA25E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>AdapterSample.Module1</StartupObject>
+    <StartupObject>AdapterSample.Client</StartupObject>
     <RootNamespace>AdapterSample</RootNamespace>
     <AssemblyName>AdapterSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,7 +69,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="Adaptee.vb" />
+    <Compile Include="AdapterDelegation\Adapter.vb" />
+    <Compile Include="AdapterInherits\Adapter.vb" />
+    <Compile Include="Client.vb" />
+    <Compile Include="Command3.vb" />
+    <Compile Include="Command2.vb" />
+    <Compile Include="Command1.vb" />
+    <Compile Include="ICommand.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

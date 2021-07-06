@@ -1,6 +1,5 @@
 ﻿Namespace AdapterInherits
     Public Class Adapter : Inherits Adaptee : Implements ICommand
-
         Public Sub StartLog() Implements ICommand.StartLog
             Console.WriteLine("処理を開始します！")
         End Sub
